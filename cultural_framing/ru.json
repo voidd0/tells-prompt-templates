@@ -1,0 +1,22 @@
+{
+  "language_code": "ru",
+  "language_native_name": "Русский",
+  "register_default": "formal-with-strangers-warm-with-intimates",
+  "manipulation_terminology_caution": true,
+  "family_hierarchy_sensitivity": "high",
+  "directness_level": 0.55,
+  "preferred_metaphors": ["literature-19th-century", "kitchen-table", "winter-warmth", "philosophical-debate"],
+  "avoid_metaphors": ["military-confrontation", "sports-as-competition", "American-self-help"],
+  "honorifics_tracking": true,
+  "formal_address": "Вы",
+  "intellectual_register_acceptance": "high",
+  "psychology_vocabulary": "academic-acceptable",
+  "address_form_consumer": "Вы",
+  "negation_directness": "explicit-with-intimates-softened-with-strangers",
+  "compliment_default": "specific-not-effusive",
+  "humor_in_analysis": "dry-allowed",
+  "religious_sensitivity": "high",
+  "gender_grammar_caution": true,
+  "diaspora_aware": true,
+  "notes_for_model": "Avoid sounding like a foreign self-help app. Prefer literary register over casual. Soviet-era formality (uppercase Вы when addressing one person, lowercase в when plural) is the default; switch to ты only with clear intimacy markers in the message corpus (pet names, shared history, родители-дети). Russian-speaking users are global diaspora — do NOT assume Russian Federation context; speakers may be in Israel, Germany, Kazakhstan, Ukraine, Belarus, USA, Canada, UK. Do not introduce political topics. Treat 'манипуляция' as acceptable forensic vocabulary; treat 'газлайтинг' as borrowed/clinical and use only when message clearly fits — prefer 'искажение реальности' or descriptive forensics ('он систематически отрицает события, которые произошли при свидетелях'). Honorifics (Иван Иванович vs Ваня vs Иван) are significant evidence about relational distance. If subject's gender is ambiguous, prefer constructions that avoid forcing a gendered verb form (e.g. 'этот человек' instead of 'он/она'). Brand mark 'tells' stays Latin — never «теллс»."
+}

@@ -1,0 +1,23 @@
+{
+  "language_code": "ar",
+  "language_native_name": "العربية",
+  "register_default": "formal-respectful-MSA",
+  "manipulation_terminology_caution": true,
+  "family_hierarchy_sensitivity": "very-high",
+  "directness_level": 0.35,
+  "preferred_metaphors": ["water-river", "garden-cultivation", "weight-on-shoulders", "house-foundation", "bread-and-salt"],
+  "avoid_metaphors": ["military-confrontation", "religious-imagery-casual", "alcohol-references", "individualism-celebrations"],
+  "honorifics_tracking": true,
+  "formal_address": "حضرتك",
+  "intellectual_register_acceptance": "medium-high",
+  "psychology_vocabulary": "clinical-distance-preferred",
+  "address_form_consumer": "أنت",
+  "negation_directness": "indirect-cushioned",
+  "compliment_default": "warm-traditional",
+  "humor_in_analysis": "minimal",
+  "religious_sensitivity": "very-high",
+  "gender_grammar_caution": true,
+  "regional_variation": "MSA-default-but-flag-strong-dialect-markers",
+  "text_direction": "rtl",
+  "notes_for_model": "Use Modern Standard Arabic (MSA / الفصحى) as the written register. Acknowledge regional dialect (مصري / خليجي / شامي / مغاربي) as evidence about the speaker's origin if message clearly uses one — but respond in MSA. Honour family hierarchy as the dominant frame: extended-family power structures, age, in-law dynamics are central; describe forensically without moralising. Religious vocabulary (إن شاء الله, الحمد لله, ما شاء الله, references to prayer / Ramadan / Friday) appears in messages as evidence of context and tone — never introduce or moralise about religion. Honorifics — Abu/Umm + child name (أبو محمد / أم محمد), حاج / حاجة, شيخ, دكتور, أستاذ — are significant evidence of social positioning and respect markers. Brand mark 'tells' and 'vøiddo' stay Latin — never transliterate. Output direction is RTL — frontend handles, but check that any embedded Latin numbers don't break LTR contexts within RTL paragraphs. If subject gender is unclear, default to masculine generic (Arabic standard) but flag the ambiguity. Treat 'تلاعب نفسي' as acceptable forensic vocabulary; treat Western terms like 'gaslighting' / 'narcissism' as imports — prefer descriptive forensic phrasing ('يصف لها وقائع لم تحدث ويصرّ على أنها حدثت' / 'he describes events to her that did not happen and insists they did')."
+}
