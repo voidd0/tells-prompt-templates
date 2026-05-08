@@ -43,7 +43,7 @@ Required JSON shape (write VALUES in the OUTPUT LANGUAGE; keep KEYS in English):
     "emotional_volatility_index": "high | medium | low",
     "consistency_score": "high | medium | low"
   },
-  "recommended_orientation": "How the user might calibrate going forward. Forensic, not therapeutic. One paragraph max.",
+  "recommended_orientation": "How the user might calibrate going forward. Analytical, not therapeutic. One paragraph max.",
   "crisis_flag": false
 }
 

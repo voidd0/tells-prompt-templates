@@ -1,11 +1,12 @@
 # tells-prompt-templates
 
-> Public copy of every system prompt that [tells](https://tells.voiddo.com) sends to Google Gemini.
+> Public copy of the system-prompt layer behind [tells](https://tells.voiddo.com).
 
-This repository exists so you can verify, exactly, what the AI behind tells
-sees when you submit a message, profile excerpt, or draft. Nothing in this
-repo is a marketing description; it's the actual production prompt
-templates, copied here verbatim from the (private) tells backend.
+This repository exists so you can verify, exactly, what the tells analysis
+engine is instructed to read when you submit a message, profile excerpt, or
+draft. Nothing in this repo is a marketing description; it's the actual
+production prompt templates, copied here verbatim from the private tells
+backend.
 
 The implementation that wires these prompts together — request handling,
 authentication, billing, persistence — stays in the private backend. This
@@ -28,7 +29,7 @@ The three public privacy components:
 
 ### Top-level prompts
 
-- [`base.py`](base.py) — the shared system-prompt scaffolding (forensic
+- [`base.py`](base.py) — the shared system-prompt scaffolding (analysis
   framing, refusal rules, output discipline).
 - [`analyze_message.py`](analyze_message.py) — the read-a-message prompt
   (single-message analysis, the most-used surface).
@@ -62,9 +63,9 @@ The three public privacy components:
   the analysis lens at request time. Conflict / Dating / Family / Friendship
   / Patterns / Public-figure / Self / Workplace.
 
-## What Gemini receives per request
+## What the analysis engine receives per request
 
-For each analysis call, Gemini receives:
+For each analysis call, the engine receives:
 
 1. The system prompt for the requested mode (one of the top-level files above).
 2. The cultural framing JSON for the user's selected language.
@@ -72,25 +73,25 @@ For each analysis call, Gemini receives:
 4. The text content the user submitted, verbatim.
 5. A response schema (so the output is structured JSON we can validate).
 
-Gemini does **not** receive: the user's email, IP, account ID, tracked-person
-labels, billing tier, signup date, or any cross-request identifier. Each call
-is stateless. We use Gemini under enterprise data-protection terms — content
-is not used for model training.
+The engine does **not** receive: the user's email, IP, account ID,
+tracked-person labels, billing tier, signup date, or any cross-request
+identifier. Each call is stateless. Submitted content is not used for model
+training.
 
 ## Versioning
 
 This repo is versioned alongside the production backend. Material prompt
-changes (anything that affects what Gemini sees, not just typo fixes) are
-committed here within 24 hours of going live in production.
+changes (anything that affects the analysis instructions, not just typo
+fixes) are committed here within 24 hours of going live in production.
 
 The diff history of this repo is the canonical record of what tells has ever
-asked Gemini.
+asked its analysis engine to do.
 
 ## Reporting issues
 
 If you find:
 
-- A prompt that asks Gemini for something we did not document publicly,
+- A prompt that asks the analysis engine for something we did not document publicly,
 - A factual error in a cultural-framing file,
 - A platform-specific framing that misrepresents the platform,
 
